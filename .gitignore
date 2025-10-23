@@ -1,0 +1,20 @@
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Don't track user configs if someone clones this
+.env
+user_prefs.json
+api_key.txt
+ai_settings.json
+
+# Build artifacts (if we ever add multi-arch builds)
+build/
+*.log
