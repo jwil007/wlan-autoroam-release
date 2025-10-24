@@ -86,7 +86,7 @@ RoamBot is an agentic AI assistant that can run tests, analyze results, compare 
 
 **What makes it "agentic"?** RoamBot decides which actions to take based on your question. Ask to "run a test and compare it to yesterday's run" - it'll start the test, wait for completion, fetch the historical data, and provide a comparison. No button clicking required.
 > [!TIP]
-> In my testing - Claude Haiku 4.5 (Anthropic) has performed the best. The MCP implementation makes is super easy to swap out models - you can even hot swap mid conversation. To easily try different public models, check out OpenRouter. Local LLMs via Ollama like Qwen3 do work but YMMV.
+> In my testing - Claude Haiku 4.5 (Anthropic) has performed the best. The MCP implementation makes is easy to swap out models - you can even hot-swap mid conversation. To easily try different public models, check out OpenRouter. Local LLMs via Ollama like Qwen3 do work but YMMV.
 
 
 ### Setup
