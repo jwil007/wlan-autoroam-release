@@ -113,7 +113,7 @@ Always run wlan-autoroam with `sudo` as it requires root privileges to access wi
 
 ## License
 
-Licensed under the GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Proprietary freeware - free to use for any purpose. See [LICENSE](LICENSE) for details.
 
 ---
 
