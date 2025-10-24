@@ -80,6 +80,15 @@ After setup, your configuration lives in:
 
 See [BINARY_USAGE.md](BINARY_USAGE.md) for detailed configuration options.
 
+## AI Analysis (RoamBot)
+
+RoamBot is an agentic AI assistant that can run tests, analyze results, compare networks, and answer questions about your Wi-Fi infrastructure. It uses the Model Context Protocol (MCP) to access tools and data autonomously.
+
+**What makes it "agentic"?** RoamBot decides which actions to take based on your question. Ask to "run a test and compare it to yesterday's run" - it'll start the test, wait for completion, fetch the historical data, and provide a comparison. No button clicking required.
+> [!TIP]
+> In my testing - Claude Haiku 4.5 (Anthropic) has performed the best. The MCP implementation makes is super easy to swap out models - you can even hot swap mid conversation. To easily try different public models, check out OpenRouter. Local LLMs via Ollama like Qwen3 do work but YMMV.
+
+
 ### Setup
 
 1. Click **AI Settings** (top bar icon) and configure your provider:
@@ -167,3 +176,13 @@ Proprietary freeware - free to use for any purpose. See [LICENSE](LICENSE) for d
 ---
 
 **Built with:** Python, Flask, FastMCP, and the Model Context Protocol
+
+### Screenshots
+#### Agentic AI and graphical analysis
+<img width="1239" height="1335" alt="10 0 10 58_8443_ (4)" src="https://github.com/user-attachments/assets/f8b3311d-4a26-4d29-a3e2-623856023649" />
+
+#### Mobility Score
+<img width="413" height="419" alt="mobilityscorescreenshot" src="https://github.com/user-attachments/assets/6fa5691c-3522-48e2-9f4e-749c7105b806" />
+
+#### AP list and per roam details
+<img width="1234" height="1044" alt="AP list with roam deetz" src="https://github.com/user-attachments/assets/4a13dd40-afdb-4d36-a1b2-a2a6660825aa" />
