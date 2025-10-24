@@ -80,6 +80,55 @@ After setup, your configuration lives in:
 
 See [BINARY_USAGE.md](BINARY_USAGE.md) for detailed configuration options.
 
+### Setup
+
+1. Click **AI Settings** (top bar icon) and configure your provider:
+   - **OpenAI**: Get API key from https://platform.openai.com/api-keys. Endpoint: `https://api.openai.com/v1`.
+   - **Anthropic**: Get API key from https://console.anthropic.com/. Endpoint: `https://api.anthropic.com/v1`.
+   - **OpenRouter** (multi-model): Get API key from https://openrouter.ai/. Endpoint: `https://openrouter.ai/api/v1`. Supports Claude, GPT-4, Gemini, and 200+ models.
+   - **Ollama** (local): Install with `curl -fsSL https://ollama.ai/install.sh | sh`, pull a model (`ollama pull llama3.2`), set endpoint to `http://localhost:11434/v1`.
+   - **LM Studio** (local): Download from https://lmstudio.ai/, start the server, set endpoint to `http://localhost:1234/v1`.
+
+2. Save settings and start chatting. RoamBot will introduce itself.
+
+**Token usage:** The AI panel header shows token consumption. Agentic mode can pull significant data when comparing runs - watch your usage carefully. Anthropic models (especially Claude Opus) provide the best analysis but are pricey. For free usage, go local with Ollama.
+
+**Privacy:** Your credentials and test data are only sent when you request analysis. Use local providers (Ollama/LM Studio) for complete privacy.
+
+**Customization:** Edit AI behavior in `autoroam/tools/prompt_engineering.py`.
+
+> [!NOTE]
+> AI settings (API key, endpoint, model) are stored locally in `webui/server/ai_settings.json`. Your preferred interface is saved in `webui/server/user_prefs.json` - tell RoamBot once and it remembers.
+
+### Example Prompts
+
+**Running tests:**
+- "Run a roam test on wlp0s20f3"
+- "Test my network and save the results"
+- "Run a test with RSSI threshold of -70"
+
+**Analysis:**
+- "What were the failures in this test?"
+- "Why did roam #3 take so long?"
+- "Are there any configuration issues with these APs?"
+
+**Multi-run comparison:**
+- "Compare the last two Wilson-Corp runs"
+- "Show me all IoT tests from this week"
+- "Has performance improved since yesterday?"
+- "Which network has better roaming performance?"
+- "What's the trend in association times?"
+
+**Network audit:**
+- "Are all my APs configured consistently?"
+- "Which APs are overloaded?"
+- "Do I have co-channel interference?"
+
+### REST API
+Experimental REST API for programmatic access. Swagger docs at https://localhost:8443/api/docs (handy button in the UI after login).
+
+API calls require `X-API-Key` header with the key from `webui/server/api_key.txt`.
+
 ## Documentation
 
 - **[QUICKSTART.md](QUICKSTART.md)** - Run your first roaming test
