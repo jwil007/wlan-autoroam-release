@@ -18,3 +18,4 @@ ai_settings.json
 # Build artifacts (if we ever add multi-arch builds)
 build/
 *.log
+wlan-autoroam
