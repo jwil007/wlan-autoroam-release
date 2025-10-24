@@ -177,5 +177,3 @@ Proprietary freeware - free to use for any purpose. See [LICENSE](LICENSE) for d
 ---
 
 **Built with:** Python, Flask, FastMCP, and the Model Context Protocol
-<img width="1234" height="1044" alt="AP list with roam deetz" src="https://github.com/user-attachments/assets/4a13dd40-afdb-4d36-a1b2-a2a6660825aa" 
-/>
