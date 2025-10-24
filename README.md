@@ -85,8 +85,9 @@ See [BINARY_USAGE.md](BINARY_USAGE.md) for detailed configuration options.
 RoamBot is an agentic AI assistant that can run tests, analyze results, compare networks, and answer questions about your Wi-Fi infrastructure. It uses the Model Context Protocol (MCP) to access tools and data autonomously.
 
 **What makes it "agentic"?** RoamBot decides which actions to take based on your question. Ask to "run a test and compare it to yesterday's run" - it'll start the test, wait for completion, fetch the historical data, and provide a comparison. No button clicking required.
+
 > [!TIP]
-> In my testing - Claude Haiku 4.5 (Anthropic) has performed the best. The MCP implementation makes is easy to swap out models - you can even hot-swap mid conversation. To easily try different public models, check out OpenRouter. Local LLMs via Ollama like Qwen3 do work but YMMV.
+> In my testing Claude Haiku 4.5 (Anthropic) has been best for price/performance. The MCP implementation makes is easy to swap out models so experiment to find what works best for you. To easily try different public models, check out OpenRouter. Local LLMs via ollama like Qwen3 do work but YMMV.
 
 
 ### Setup
@@ -100,7 +101,7 @@ RoamBot is an agentic AI assistant that can run tests, analyze results, compare 
 
 2. Save settings and start chatting. RoamBot will introduce itself.
 
-**Token usage:** The AI panel header shows token consumption. Agentic mode can pull significant data when comparing runs - watch your usage carefully. Anthropic models (especially Claude Opus) provide the best analysis but are pricey. For free usage, go local with Ollama.
+**Token usage:** The AI panel header shows token consumption. Agentic mode can pull significant data when comparing runs - watch your usage carefully. You generally get what you pay for, but I've tried to make the prompt engineering explicit enough to make "dumb" models "smart". For free usage, go local with Ollama - bring a big GPU.
 
 **Privacy:** Your credentials and test data are only sent when you request analysis. Use local providers (Ollama/LM Studio) for complete privacy.
 
