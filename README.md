@@ -177,16 +177,5 @@ Proprietary freeware - free to use for any purpose. See [LICENSE](LICENSE) for d
 ---
 
 **Built with:** Python, Flask, FastMCP, and the Model Context Protocol
-
-## Screenshots
-#### Agentic AI and graphical analysis
-<img width="1239" height="1335" alt="10 0 10 58_8443_ (4)" src="https://github.com/user-attachments/assets/f8b3311d-4a26-4d29-a3e2-62385602364
-9" />
-
-#### Mobility Score
-<img width="413" height="419" alt="mobilityscorescreenshot" src="https://github.com/user-attachments/assets/6fa5691c-3522-48e2-9f4e-749c7105b806
-" />
-
-#### AP list and per roam details
 <img width="1234" height="1044" alt="AP list with roam deetz" src="https://github.com/user-attachments/assets/4a13dd40-afdb-4d36-a1b2-a2a6660825aa" 
 />
