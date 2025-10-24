@@ -42,12 +42,14 @@ Most modern Linux distributions have these installed by default.
 
 2. **Make it executable:**
    ```bash
-   chmod +x wlan-autoroam
+   # Replace * with the version for your binary (i.e. wlan-autoroam-amd64)
+   chmod +x wlan-autoroam-*
    ```
 
 3. **Run the setup wizard:**
    ```bash
-   sudo ./wlan-autoroam
+   # Replace * with the version for your binary (i.e. wlan-autoroam-amd64)
+   sudo ./wlan-autoroam-*
    ```
 
    On first run, the wizard will:
