@@ -177,7 +177,7 @@ Proprietary freeware - free to use for any purpose. See [LICENSE](LICENSE) for d
 
 **Built with:** Python, Flask, FastMCP, and the Model Context Protocol
 
-### Screenshots
+## Screenshots
 #### Agentic AI and graphical analysis
 <img width="1239" height="1335" alt="10 0 10 58_8443_ (4)" src="https://github.com/user-attachments/assets/f8b3311d-4a26-4d29-a3e2-623856023649" />
 
