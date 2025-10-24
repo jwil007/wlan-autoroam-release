@@ -221,26 +221,6 @@ Check that:
 4. Log in with credentials from setup wizard
 5. Start roaming tests!
 
-## Differences from Source Mode
-
-| Feature | Binary Mode | Source Mode (autoroam.sh) |
-|---------|-------------|---------------------------|
-| Setup | Interactive wizard | Script with prompts |
-| Config location | `~/.config/wlan-autoroam/` | Project directory |
-| Dependencies | Check only system utils | Also checks Python/venv |
-| Roam execution | In-process threading | Subprocess |
-| Portability | Single file | Requires Python env |
-
-## Building from Source
-
-To build the binary yourself:
-
-```bash
-cd wlan-autoroam/
-./build.sh
-
-# Binary will be in dist/wlan-autoroam
-```
 
 ## Security Notes
 
@@ -281,5 +261,5 @@ openssl req -x509 -newkey rsa:4096 \
 ## Support
 
 For issues, feature requests, or questions:
-- GitHub: https://github.com/jwil007/wlan-autoroam
+- GitHub: https://github.com/jwil007/wlan-autoroam-release
 - Open an issue with your system info and error messages
