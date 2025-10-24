@@ -2,7 +2,7 @@
 
 An automated Wi-Fi roaming analyzer with agentic AI capabilities. Test your wireless network's roaming performance across access points with detailed phase-by-phase metrics and AI-powered analysis.
 
-<img width="800" alt="wlan-autoroam web interface" src="https://github.com/user-attachments/assets/f8b3311d-4a26-4d29-a3e2-623856023649" />
+<img width="1239" height="1335" alt="10 0 10 58_8443_ (4)" src="https://github.com/user-attachments/assets/f8b3311d-4a26-4d29-a3e2-623856023649" />
 
 > [!IMPORTANT]
 > **AI Features Require Your Own API Key**: RoamBot needs an LLM provider (OpenAI, Anthropic, OpenRouter, or local Ollama/LM Studio). Basic roaming tests work without AI. See [BINARY_USAGE.md](BINARY_USAGE.md) for configuration.
