@@ -2,7 +2,8 @@
 
 An automated Wi-Fi roaming analyzer with agentic AI capabilities. Test your wireless network's roaming performance across access points with detailed phase-by-phase metrics and AI-powered analysis.
 
-<img width="1239" height="1335" alt="10 0 10 58_8443_ (4)" src="https://github.com/user-attachments/assets/f8b3311d-4a26-4d29-a3e2-623856023649" />
+<img width="1239" height="1335" alt="10 0 10 58_8443_ (4)" src="https://github.com/user-attachments/assets/f8b3311d-4a26-4d29-a3e2-62385602364
+9" />
 
 > [!IMPORTANT]
 > **AI Features Require Your Own API Key**: RoamBot needs an LLM provider (OpenAI, Anthropic, OpenRouter, or local Ollama/LM Studio). Basic roaming tests work without AI. See [BINARY_USAGE.md](BINARY_USAGE.md) for configuration.
@@ -18,7 +19,7 @@ An automated Wi-Fi roaming analyzer with agentic AI capabilities. Test your wire
 * **Failed Roam Diagnostics** - Auto-saves log snippets for failed roams with detailed error context.
 * **Save/Load Results** - Persist test runs with notes for historical comparison and trend analysis.
 * **MCP Integration** - Model Context Protocol server for AI agent interactions ([learn more](docs/MCP_EXPLAINER.md)).
-* **REST API** - Programmatic access to all test and analysis functions (Beta).
+* **REST API** - Programmatic access to all test and analysis functions.
 
 ## Quick Start
 
@@ -89,7 +90,6 @@ RoamBot is an agentic AI assistant that can run tests, analyze results, compare 
 > [!TIP]
 > In my testing Claude Haiku 4.5 (Anthropic) has been best for price/performance. The MCP implementation makes is easy to swap out models so experiment to find what works best for you. To easily try different public models, check out OpenRouter. Local LLMs via Ollama like Qwen3 do work but YMMV.
 
-
 ### Setup
 
 1. Click **AI Settings** (top bar icon) and configure your provider:
@@ -135,12 +135,13 @@ RoamBot is an agentic AI assistant that can run tests, analyze results, compare 
 - "Do I have co-channel interference?"
 
 ### REST API
-Experimental REST API for programmatic access. Swagger docs at https://localhost:8443/api/docs (handy button in the UI after login).
+REST API for programmatic access. Swagger docs at https://localhost:8443/api/docs (handy button in the UI after login).
 
 API calls require `X-API-Key` header with the key from `webui/server/api_key.txt`.
 
 ## Documentation
 
+- **[CHANGELOG.md](CHANGELOG.md)** - Version history and release notes
 - **[QUICKSTART.md](QUICKSTART.md)** - Run your first roaming test
 - **[BINARY_USAGE.md](BINARY_USAGE.md)** - Complete usage guide, configuration, and troubleshooting
 - **[docs/MOBILITY_SCORE.md](docs/MOBILITY_SCORE.md)** - Understanding the mobility score
@@ -180,10 +181,13 @@ Proprietary freeware - free to use for any purpose. See [LICENSE](LICENSE) for d
 
 ## Screenshots
 #### Agentic AI and graphical analysis
-<img width="1239" height="1335" alt="10 0 10 58_8443_ (4)" src="https://github.com/user-attachments/assets/f8b3311d-4a26-4d29-a3e2-623856023649" />
+<img width="1239" height="1335" alt="10 0 10 58_8443_ (4)" src="https://github.com/user-attachments/assets/f8b3311d-4a26-4d29-a3e2-62385602364
+9" />
 
 #### Mobility Score
-<img width="413" height="419" alt="mobilityscorescreenshot" src="https://github.com/user-attachments/assets/6fa5691c-3522-48e2-9f4e-749c7105b806" />
+<img width="413" height="419" alt="mobilityscorescreenshot" src="https://github.com/user-attachments/assets/6fa5691c-3522-48e2-9f4e-749c7105b806
+" />
 
 #### AP list and per roam details
-<img width="1234" height="1044" alt="AP list with roam deetz" src="https://github.com/user-attachments/assets/4a13dd40-afdb-4d36-a1b2-a2a6660825aa" />
+<img width="1234" height="1044" alt="AP list with roam deetz" src="https://github.com/user-attachments/assets/4a13dd40-afdb-4d36-a1b2-a2a6660825aa" 
+/>

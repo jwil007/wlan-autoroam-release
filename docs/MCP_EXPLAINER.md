@@ -18,19 +18,16 @@ Browser → Flask → MCP Client (+ LLM) → MCP Server (tools)
 2. Flask passes question to MCP Client
 3. Client calls LLM with question + available tools
 4. LLM responds: "Use start_roam tool"
-5. Client calls MCP Server → `start_roam("Wilson-Corp")`
-6. Server returns: `{"status": "started", "run_dir": "..."}`
+5. Client calls MCP Server → `start_roam("wlp0s20f3")`
+6. Server waits for roam to complete and returns: `{"status": "completed", "run_dir": "...", "summary": {...}}`
 7. Client feeds result back to LLM
-8. LLM: "Now use wait_for_roam_completion"
-9. (continues iterating up to 10 times)
-10. LLM provides final answer
-11. Client returns to Flask → Browser
+8. LLM analyzes the results and provides final answer
+9. Client returns to Flask → Browser
 
 ## Available Tools
 
 **Test Management:**
-- `start_roam(ssid)` - Start test
-- `wait_for_roam_completion(run_dir)` - Wait for test to finish
+- `start_roam(iface, rssi)` - Start test and wait for completion (blocks until done)
 
 **Data Access:**
 - `get_latest_summary()` - Most recent test
